@@ -1,0 +1,27 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: frpc-hardened
+  description: Hardened, FIPS-enabled builds of fatedier/frp's frpc client, published by Orca Security
+  labels:
+    orca.security/is-production: "true"
+    orca.security/repo-is-fork: "false"
+    orca.security/repo-visibility: private
+  annotations:
+    github.com/project-slug: orcasecurity/frpc-hardened
+    github.com/team-slug: orcasecurity/team-kspm
+    orca.security/jiraProjectKey: ORCAEPIC-11236
+
+    orca.security/jira-project-name: K8s Connector
+
+    orca.security/repo-default-branch: master
+    orca.security/repo-main-language: Golang
+  links:
+    - url: https://github.com/orcasecurity/frpc-hardened
+      title: Source Code
+      icon: github
+      type: url
+spec:
+  type: repository
+  lifecycle: experimental
+  owner: team-kspm

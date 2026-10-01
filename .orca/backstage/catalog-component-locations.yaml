@@ -1,0 +1,11 @@
+apiVersion: backstage.io/v1alpha1
+kind: Location
+metadata:
+  name: catalog-locations-frpc-hardened
+  labels:
+    repository: frpc-hardened
+  annotations:
+    github.com/project-slug: orcasecurity/frpc-hardened
+spec:
+  presence: optional
+  targets: []
